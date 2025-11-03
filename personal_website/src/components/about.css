@@ -1,0 +1,47 @@
+.sectiontitle {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+
+.sectionparagraph {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+    text-align: left;
+}
+
+.search-input {
+    width: 5rem;
+
+    &:focus {
+        width: 20rem;
+    }
+    transition: width 300ms;
+}
+
+.button-about-group {
+    display: flex;
+        
+    button {
+        padding: 10px 10 px;
+        border: 0;
+        transition: all 300ms;
+
+        &.active {
+            background: #3a3a3a;
+        }
+        
+        &.normal {
+            background: #111111;
+        }
+    }
+
+    button:first-of-type {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    button:last-of-type {
+        border-radius: 0 1rem 1rem 0;
+    }
+}
