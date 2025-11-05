@@ -1,0 +1,89 @@
+@import '../index.css';
+
+ /* Google chrome */
+  @-webkit-keyframes svg-text-anim {
+   40% {
+      stroke-dashoffset: 0;
+    }
+    60% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+    
+}
+/* Most browsers */
+@keyframes svg-text-anim {
+
+    40% {
+        stroke-dashoffset: 0;
+    }
+    60% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+    
+}
+
+.hero {
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.hero-svg {
+  opacity: 0;
+  transition: opacity 5s;
+  position: relative;
+  height: 12rem;
+  top: 4rem;
+}
+
+.hero-svg.visible {
+  opacity: 1;
+}
+
+.hero-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%; 
+    max-width: 600px;
+    height: auto;    
+    display: block;   
+    margin: 0 auto;      
+    border-radius: 80px; 
+    z-index: 1;
+}
+
+.hero-image-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; 
+  z-index: 2;
+  background: linear-gradient(to bottom, transparent, var(--background-color));
+}
+
+.hero-background-gradient {
+    /* position: relative; */
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%; 
+    background: radial-gradient(circle,rgba(45, 51, 82, 1) 0%, rgba(47, 62, 138, 1) 30%, rgba(65, 91, 204, 1) 70%);
+}
+
+.socials {
+    position: relative;
+    height: 4rem;
+    bottom: 2rem;
+}

@@ -59,28 +59,33 @@ function About() {
     const getText = () => {
         switch (visibleText) {
             case buttonLabels[0]:
-                return "I'm a software engineer and computer science student graduating from Colby College in May 2026. \
-                        Some of my interests include coding, music, Rubik's cubes, speedrunning, and content creation!"
+                return "I'm a software engineer and computer science student graduating from Colby College in May 2026.\n \
+                        My favorite programming languages, tools, and technologies include Python, React, C#, and SQL.\n \
+                        I'm also interested in AI and web development.\n \
+                        This past summer, I interned at Salary.com doing full-stack development!"
             case buttonLabels[1]:
-                return "I've loved music my whole life! I've been playing the trombone for 12 years. \
-                        I also enjoy composing music and listening to music. \
-                        My favorite genres are classical, jazz, indie rock, and shoegaze."
+                return "I've loved music my whole life! I've been playing the trombone for 12 years.\n \
+                        I also enjoy composing and listening to music.\n \
+                        My favorite genres are classical, jazz, indie rock, and shoegaze.\n \
+                        I also like record collecting."
             case buttonLabels[2]:
-                return "I'm a software engineer and computer science student graduating from Colby College in May 2026. \
-                        Some of my interests include coding, music, Rubik's cubes, speedrunning, and content creation!"
+                return "Some of my other interests include Rubik's cubes, speedrunning, and content creation!\n \
+                        Top 1% World speedcuber (3x3 sub-9 ao5 PR).\n \
+                        Multiple-time world record holder in one of the best-selling games of all time (IYKYK).\n \
+                        6k+ Twitch followers, 3k+ YouTube subscribers."
             default:
                 return "";
         }
     };
 
     return (
-        <div>
-            <h1 className="sectiontitle">About Me</h1>
-            <p className={`sectionparagraph ${fadeState}`}>
+        <div className="section-container">
+            <h1 className="section-title">About Me</h1>
+            <p className={`section-paragraph ${fadeState}`}>
                 {getText()}
             </p>
-            <input type="text" className="search-input" placeholder="Search..."/>
-            <ButtonSelector 
+            {/* <input type="text" className="search-input" placeholder="Search..."/> */}
+            <ButtonSelector
                 activeText={activeText}
                 onClick={handleClick}
                 buttonLabels={buttonLabels}

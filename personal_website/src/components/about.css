@@ -1,13 +1,20 @@
-.sectiontitle {
-    position: absolute;
-    top: 10px;
-    left: 16px;
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: baseline;
+    padding: 2rem;
 }
 
-.sectionparagraph {
-    position: absolute;
-    top: 100px;
-    left: 16px;
+.section-title {
+    flex-shrink: 0;
+    height: 0.5rem;
+    text-align: left;
+}
+
+.section-paragraph {
+    flex-shrink: 0;
+    height: 5rem;
     text-align: left;
     white-space: pre-line;
     transition: opacity 300ms ease-in-out;
@@ -31,13 +38,14 @@
     transition: width 300ms;
 }
 
-.button-about-group {
-    display: flex;
-        
+.button-about-group {  
+    flex-shrink: 0;
+    height: 2rem;
+
     button {
-        padding: 10px 10 px;
-        border: 0;
+        padding: 1rem 1rem;
         transition: all 300ms;
+        border: none;
 
         &.active {
             background: #3a3a3a;

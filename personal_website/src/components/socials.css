@@ -1,0 +1,42 @@
+.socials-container {
+    display: flex;
+    gap: 0rem;
+    justify-content: center;
+    margin-top: 1rem;
+    opacity: 0;
+    transition: opacity 5s;
+}
+
+.socials-container.visible {
+    opacity: 1;
+}
+
+.button-container {
+    display: flex;
+    width: 5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.button-text {
+    position: relative;
+    top: 1rem;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none; /* Prevent from blocking hover */
+    transition: opacity 0.3s ease;
+}
+
+.socials-button {
+    color: white;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.socials-button:hover {
+    transform: scale(1.1);
+    color: #b6bed3;
+}
+
+.socials-button:hover ~ .button-text {
+    opacity: 1;
+}
