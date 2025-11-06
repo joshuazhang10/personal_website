@@ -1,8 +1,8 @@
 import { faGithubSquare, faSquareLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import '../components/socials.css'
+import './socials.css'
 import { faEnvelope, faFileLines } from '@fortawesome/free-regular-svg-icons';
-import JoshuaZhangResume from '../assets/Joshua_Zhang_Resume_2025.pdf'
+import JoshuaZhangResume from '../../assets/Joshua_Zhang_Resume_2025.pdf'
 
 const SocialsButton = ({ icon, text, link }) => {
     return (

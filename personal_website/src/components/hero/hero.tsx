@@ -1,8 +1,8 @@
-import joshuaImg1 from '../assets/joshua_1.png'
-import { ReactComponent as HelloSvg } from '../assets/hello.svg';
+import joshuaImg1 from '../../assets/joshua_1.png'
+import { ReactComponent as HelloSvg } from '../../assets/hello.svg';
 import './hero.css'
 import { useEffect } from 'react';
-import Socials from './socials';
+import Socials from '../socials/socials';
 
 // https://akashraj9828.github.io/svg-text-animation-generator/
 function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {

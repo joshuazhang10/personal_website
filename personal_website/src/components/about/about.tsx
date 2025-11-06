@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './about.css'
+import joshuaImg3 from '../../assets/joshua_3.png';
 
 export interface ButtonSelectorProps {
     activeText: string;
@@ -81,10 +82,12 @@ function About() {
     return (
         <div className="section-container">
             <h1 className="section-title">About Me</h1>
-            <p className={`section-paragraph ${fadeState}`}>
-                {getText()}
-            </p>
-            {/* <input type="text" className="search-input" placeholder="Search..."/> */}
+            <div className="section-content">
+                <p className={`section-paragraph ${fadeState}`}>
+                    {getText()}
+                </p>
+                <img className="about-image" src={joshuaImg3}/>
+            </div>
             <ButtonSelector
                 activeText={activeText}
                 onClick={handleClick}
