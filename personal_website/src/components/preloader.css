@@ -1,0 +1,13 @@
+.preloader {
+    position: fixed;
+    inset: 0;
+    background-color: #415BCC; 
+    transition: background-color 1s ease-in-out, opacity 1s ease-in-out;
+    z-index: 9999;
+}
+
+.preloader.fade-out {
+    background-color: rgba(21, 23, 32, 0);
+    opacity: 0;
+    pointer-events: none;
+}

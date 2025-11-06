@@ -4,16 +4,18 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import About from './components/about'
 import Hero from './components/hero'
+import Preloader from './components/preloader'
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [loading, setLoading] = useState(true);
 
-  return (
-    <>
-        <Hero />
-        <About />
-    </>
-  )
+    return (
+        <>
+                {loading && <Preloader onFinish={() => setLoading(false)} />}
+            <Hero />
+            <About />
+        </>
+    )
 }
 
 export default App
